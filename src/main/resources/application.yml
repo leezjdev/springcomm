@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springcomm
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pycomm
+    username: ${SPRINGCOMM_USER}
+    password: ${SPRINGCOMM_PWD}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto:validate
+    open-in-view: false
+  flyway:
+    enabled: true
